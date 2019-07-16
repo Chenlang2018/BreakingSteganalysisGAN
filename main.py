@@ -231,7 +231,7 @@ for epoch in range(train_epoch):
                   ((epoch + 1), train_epoch, i + 1, 15000 / batch_size, d_loss.item(), g_loss.item()))
 
         ### TEST EVERY EPOCH ###
-        if i == 100:
+        if i == 110:
             GLOSS.append(0.5 * g_loss_d.item())
             BCELOSS.append(bceloss.item())
             DLOSS.append(d_loss.item())
